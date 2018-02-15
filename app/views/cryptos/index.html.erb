@@ -7,6 +7,7 @@
 
   <p> <%= label_tag 'crypto', "Of which money you want to see the price?"  %> </p>
   <p> <%= select_tag :crypto, options_for_select(@crypto_names.collect{|x| x})%> 
+
   </p>
 	<p> <%= submit_tag 'Find the current price!', class: "btn btn-primary"%></p>
   </div>

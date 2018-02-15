@@ -1,6 +1,6 @@
 class CryptosController < ApplicationController
   def index
-  	@crypto_names = FindCrypto.new.all_crypto
+  	@crypto_names = FindCrypto.new.all_crypto.sort
   end
 
   def create

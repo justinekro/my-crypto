@@ -7,7 +7,7 @@ class FindCrypto
 	end
 
 	def all_crypto
-		@crypto_names = @page_coin.css('a[class="currency-name-container"]').take(100).map{|id| id.text.downcase.gsub(" ","-").gsub(".","-")}
+		@crypto_names = @page_coin.css('a[class="currency-name-container"]').map{|id| id.text.downcase.gsub(" ","-").gsub(".","-")}
 	end
 
 	def find_value
